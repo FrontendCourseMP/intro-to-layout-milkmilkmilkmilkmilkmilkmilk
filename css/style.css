@@ -1,0 +1,177 @@
+/* philosopher-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* philosopher-italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic_latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* philosopher-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/philosopher-v19-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root{
+    --header-color: #4B4B4B;
+    --text-color: #4B4B4B;
+    --text-trans-color: #fff;
+    --big-text-color: #9EAF7C;
+    --def-text-color: #000;
+    font-size: 67.5%;
+}
+body{
+    font-family: 'Inter','san-seif';
+    background-color: #119c92;
+}
+
+.header-block{
+  font-family: Philosopher;
+font-size: 3.8rem;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+
+.our-clients{
+  font-family: Philosopher;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 16px */
+}
+
+.feedback-autor{
+font-family: Philosopher;
+font-size: 2.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 28px */
+}
+
+.feedback-text{
+font-family: Inter;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.how-buy-header{
+  font-family: Philosopher;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70%; /* 19.6px */
+}
+
+.how-buy-text{
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-line{
+  color: var(--text-trans-color);
+  font-family: Inter;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -2.04px;
+}
+
+.header-line-middle{
+  color: var(--text-trans-color);
+  font-family: Philosopher;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-line-bottom{
+  color: var(--text-trans-color);
+  font-family: Inter;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -2.04px;
+}
+
+.header-logo{
+color: var(--text-trans-color);
+font-family: Philosopher;
+font-size: 4rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.trans-text{
+color: var(--text-trans-color);
+font-family: Inter;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: -1.08px;
+}
+
+.big-text{
+  color: var(--big-text-color);
+text-align: center;
+font-family: Philosopher;
+font-size: 7rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.about-text{
+color: var(--def-text-color);
+text-align: center;
+font-family: Inter;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.about-product{
+font-family: Philosopher;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 26px */
+}
+
+.text-desc{
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
