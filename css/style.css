@@ -30,6 +30,9 @@
     font-weight: 400;
     src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+*{
+  box-sizing: border-box;
+}  
 
 :root{
     --header-color: #4B4B4B;
@@ -40,9 +43,20 @@
     font-size: 67.5%;
 }
 body{
+    margin: 0;
     font-family: 'Inter','san-seif';
     background-color: #119c92;
 }
+
+h1{
+  margin-top: 0;
+}
+
+p{
+  margin-top: 0;
+}
+
+
 
 .header-block{
   font-family: Philosopher;
@@ -128,6 +142,17 @@ font-size: 4rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+.wrapper{
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
 }
 
 .trans-text{
