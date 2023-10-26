@@ -56,7 +56,10 @@ p{
   margin-top: 0;
 }
 
-
+.back-img{
+  background-image: url(../img/fon1.jpg);
+  background-repeat: no-repeat;
+}
 
 .header-block{
   font-family: Philosopher;
@@ -64,6 +67,7 @@ font-size: 3.8rem;
 font-style: italic;
 font-weight: 400;
 line-height: normal;
+text-align: center;
 }
 
 .our-clients{
@@ -73,6 +77,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 16px */
 }
+
+
 
 .feedback-autor{
 font-family: Philosopher;
@@ -114,6 +120,7 @@ line-height: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: -2.04px;
+  padding-left: 45px;
 }
 
 .header-line-middle{
@@ -123,6 +130,7 @@ line-height: normal;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
+  padding-left: 45px;
 }
 
 .header-line-bottom{
@@ -133,6 +141,7 @@ line-height: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: -2.04px;
+  padding-left: 73px;
 }
 
 .header-logo{
@@ -142,13 +151,10 @@ font-size: 4rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+padding-left: 45px;
 }
 
-.wrapper{
-  max-width: 786px;
-  margin: 0 auto;
-  padding: 0 8px;
-}
+
 
 .flex{
   display: flex;
@@ -163,6 +169,7 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 letter-spacing: -1.08px;
+padding-left: 58px;
 }
 
 .big-text{
