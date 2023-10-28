@@ -56,9 +56,12 @@ p{
   margin-top: 0;
 }
 
-.back-img{
+#square{
   background-image: url(../img/fon1.jpg);
   background-repeat: no-repeat;
+  width: 390px; 
+  height: 786px;
+  position: relative;
 }
 
 .header-block{
@@ -154,7 +157,14 @@ line-height: normal;
 padding-left: 45px;
 }
 
-
+.button{
+  color: #fff; font-family: Inter; 
+  font-size: 1.6rem; height: 58px; 
+  width: 300px;margin: 0 auto; 
+  border-radius: 10px; border: none; 
+  background: #9EAF7C; 
+  display: block
+}
 
 .flex{
   display: flex;
@@ -170,23 +180,25 @@ font-weight: 300;
 line-height: normal;
 letter-spacing: -1.08px;
 padding-left: 58px;
+position: absolute
 }
 
 .big-text{
   color: var(--big-text-color);
 text-align: center;
 font-family: Philosopher;
-font-size: 7rem;
+font-size: 5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+position: absolute
 }
 
 .about-text{
 color: var(--def-text-color);
 text-align: center;
 font-family: Inter;
-font-size: 1.8rem;
+font-size: 2rem;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
