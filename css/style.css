@@ -68,6 +68,7 @@ p{
 
 .position{
   margin: 0 auto;
+  height: 869px;
 }
 
 .header-block{
@@ -216,6 +217,25 @@ font-size: 3rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 0px;
+}
+
+.large-text{
+  font-size: 7rem;
+}
+
+.krugi{
+  background-image: url(../img/krugi.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.krugi-rev{
+  background-image: url(../img/krugi-rev.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about-text{
@@ -228,18 +248,33 @@ font-weight: 300;
 line-height: normal;
 }
 
+.li-content{
+  list-style: url(../img/plus.svg) outside; 
+  padding-left: 5px;
+  margin-top: 45px;
+}
+
 .about-product{
 font-family: Philosopher;
-font-size: 26px;
+font-size: 2.6rem;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 26px */
+padding-right: 51px;
+padding-left: 60px;
+height: 180px;
+width: 300px;
 }
 
 .text-desc{
   font-family: Inter;
-font-size: 16px;
+font-size: 1.6rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+width: 300px;
+padding-right: 24px;
+}
+
+.header-li{
 }
