@@ -209,6 +209,11 @@ padding-right: 34px;
 margin-bottom: 0px;
 }
 
+.trans-text li{
+  display: flex;
+  align-items: center;
+}
+
 
 .big-text{
   color: var(--big-text-color);
