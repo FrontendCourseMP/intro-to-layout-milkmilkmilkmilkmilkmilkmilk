@@ -59,7 +59,7 @@ p{
 
 #square{
   margin: 0 auto;
-  background-image: url(../img/fonverh.png), url(../img/fon1.jpg);
+  background-image: url(), url();
   background-repeat: no-repeat;
   width: 390px; 
   height: 786px;
