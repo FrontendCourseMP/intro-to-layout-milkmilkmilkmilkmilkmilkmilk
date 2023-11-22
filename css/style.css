@@ -49,6 +49,19 @@ body{
     background-color: #F3F1EC;;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1{
   margin-top: 0;
 }
@@ -237,6 +250,10 @@ margin-top: 57px;
   line-height: 70%; /* 11.2px */
 }
 
+.krugi__title{
+  line-height: 0.7;
+}
+
 .big-text{
   color: var(--big-text-color);
 text-align: center;
@@ -253,17 +270,25 @@ margin-bottom: 0px;
 }
 
 .krugi{
+  text-align: center;
   background-image: url(../img/krugi.svg);
   background-repeat: no-repeat;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  min-height: 150px;
 }
 
 .krugi-rev{
+  text-align: center;
   background-image: url(../img/krugi-rev.svg);
   background-repeat: no-repeat;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  min-height: 150px;
 }
 
 .about-text{
