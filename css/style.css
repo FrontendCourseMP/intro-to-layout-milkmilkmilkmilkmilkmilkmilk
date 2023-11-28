@@ -62,6 +62,12 @@ body{
   overflow: hidden;
 }
 
+.fon{
+  background-image:url(../img/fonverh.png), url(../img/fon1.jpg);
+  position: relative;
+
+}
+
 h1{
   margin-top: 0;
 }
@@ -70,14 +76,14 @@ p{
   margin-top: 0;
 }
 
-#square{
+#section_1{
   margin: 0 auto;
   background-image: url(), url();
   background-repeat: no-repeat;
   position: relative;
 }
 
-.nav{
+.header_1{
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
@@ -86,9 +92,10 @@ p{
   
 }
 
-.position{
+.about_section{
   margin: 0 auto;
   height: 869px;
+  padding-left: 44px;
 }
 
 .header-block{
@@ -203,13 +210,16 @@ padding-left: 45px;
 }
 
 .button{
+  text-align: center;
   color: #fff; font-family: Inter; 
-  font-size: 1.6rem; height: 58px; 
+  font-size: 1.6rem;
+  height: 58px; 
   width: 300px; 
   margin: 0 auto; 
   border-radius: 10px; border: none; 
   background: #9EAF7C; 
-  display: block
+  display: block;
+  text-decoration: none;
 }
 
 .flex{
@@ -248,6 +258,7 @@ margin-top: 57px;
   font-style: normal;
   font-weight: 700;
   line-height: 70%; /* 11.2px */
+  height: 1600px;
 }
 
 .krugi__title{
@@ -302,9 +313,81 @@ line-height: normal;
 }
 
 .li-content{
-  list-style: url(../img/plus.svg) outside; 
+  background: url(../img/Rectangle_3949.png);
+  border-radius: 20px;
+  border: 1px solid #C3BEBE;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(10.5px); 
   padding-left: 5px;
   margin-top: 45px;
+  height: 180px;
+  width: 300px;
+  padding-left: 66px;
+  padding-right: 35px;
+}
+
+.li-content_1{
+  background: url(../img/Rectangle_3949.png);
+  border-radius: 20px;
+  border: 1px solid #C3BEBE;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(10.5px); 
+  padding-left: 66px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  margin-top: 39px;
+  height: 180px;
+  width: 300px;
+}
+
+.li-content_2{
+  background: url(../img/Rectangle_3949.png);
+  border-radius: 20px;
+  border: 1px solid #C3BEBE;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(10.5px); 
+  padding-left: 66px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  margin-top: 101px;
+  height: 180px;
+  width: 300px;
+}
+
+.li-content_3{
+  background: url(../img/Rectangle_3949.png);
+  border-radius: 20px;
+  border: 1px solid #C3BEBE;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(10.5px); 
+  padding-left: 66px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  margin-top: 96px;
+  height: 234px;
+  width: 300px;
+}
+
+.li_h3_1{
+  margin: 0;
+  padding-bottom: 3px;
+  padding-top: 18px;
+}
+
+.li_h3_2{
+  margin: 0;
+  padding-bottom: 16px;
+  padding-top: 37px;
+}
+
+.li_h3_3{
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .about-product{
@@ -313,10 +396,7 @@ font-size: 2.6rem;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 26px */
-padding-right: 51px;
-padding-left: 60px;
-height: 180px;
-width: 300px;
+height: 828px;
 }
 
 .text-desc{
@@ -325,9 +405,15 @@ font-size: 1.6rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 300px;
-padding-right: 24px;
+margin-bottom: 0;
 }
 
-.header-li{
+
+
+.end_site{
+  font-family: Inter;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }

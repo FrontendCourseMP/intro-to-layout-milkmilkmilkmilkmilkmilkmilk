@@ -8,24 +8,23 @@
     <title>Logo</title>
 </head>
 <body>
-    <header>
-        <div class="nav">
+    <header class="fon">
+        <div class="header_1">
             <a href=""><img src="../img/Logo.svg" alt=""></a>
-            <a><img src="" alt=""></a>
             <button class="burger"><img src="../img/burger.svg" alt=""></button>
         </div>
         
     </header>
     <main>
-    <section id="square">        
+    <section id="section_1">        
        <h1 class="visually-hidden"></h1>
         
-            <div class="wrapper-text">
+            <div class="section_1 wrapper_text">
                 <p class="header-line">Уличная мебель</p>
                 <p class="header-line-middle">из натурального дерева</p> 
                 <p class="header-line-bottom">от Казахстанского производителя</p>
             
-                <button class="button">Оставить заявку</button>
+                <a href="#form" class="button">Оставить заявку</a>
                 <div class="trans-text">
                 <p>Доставка по всему Казахстану и в страны СНГ</p>
                 <p>Для дома, дачи, зон отдыха и аквапарков</p>
@@ -53,62 +52,62 @@
             <p class="big-text krugi__title">Собственное<br> производство</p>
             <p class="about-text"> в г. Алматы</p>
         </div>
-        
+        <a href="#form" class="button">Оставить заявку</a>
 
-        
-
-        <button class="button">Оставить заявку</button>
     </section>
-    <section class="position">
+    <section class="about_section">
         <h2 class="header-block"> Об изделиях</h2>
-        <ul class="about-product">
-            <li class="li-content">
-                <h3>Обработанное дерево</h3> 
+        <div class="about-product">
+            <div class="li-content_1">
+                <h3 class="li_h3_1">Обработанное дерево</h3> 
                 <p class="text-desc">Сохраняет <span style="font-weight: 600;">первоначальный 
                     внешний вид</span> даже под воздействием солнца и влаги</p>
-            </li>
-        </ul>
-        <ul class="about-product">
-            <li class="li-content">
-                <h3 class="header-li">Натуральное дерево</h3> 
+            </div>
+        
+            <div class="li-content_2">
+                <h3 class="li_h3_2">Натуральное дерево</h3> 
                 <p class="text-desc">Лиственница, ангарская сосна, дуб, карагач</p>
-            </li>   
-        </ul>
-        <ul class="about-product">            
-            <li class="li-content">
-                <h3>Акриловая ткань</h3> 
+            </div>   
+        
+                  
+            <div class="li-content_3">
+                <h3 class="li_h3_3">Акриловая ткань</h3> 
                 <p class="text-desc">Обладает <span style="font-weight: 600;">водо- и грязеоталкивающими свойствами,</span> ткань сохраняет
                     цвет окраса даже после стирки и длительного воздействия солнца</p> 
-            </li>
+            </div>
                 
-        </ul>
+        </div>
     </section>
     <section>
         <h2 class="header-block">Каталог</h2>
-        <ul class="katalog">
-            <li><a href=""><img src="" alt="">Классический лежак</a></li>
-            <li><a href=""><img src="" alt="">Кресло шезлонг</a></li>
-            <li><a href=""><img src="" alt="">Топчан</a></li>
-            <li><a href=""><img src="" alt="">Комплект уличной мебели</a></li>
-            <li><a href=""><img src="" alt="">Скамейка со спинкой</a></li>
-            <li><a href=""><img src="" alt="">Обеденный стол со стульями</a></li>
-            <li><a href=""><img src="" alt="">Складной стульчик</a></li>
-            <li><a href=""><img src="" alt="">Столик-бар</a></li>
-            <li><a href=""><img src="" alt="">Кофейный столик</a></li>
-            <li><a href=""><img src="" alt="">Матрас для лежака</a></li>
-        </ul>
-       <button class="button">Оставить заявку</button>
+        <div class="katalog">
+            <div><a href=""><img src="" alt="">Классический лежак</a></div>
+            <div><a href=""><img src="" alt="">Кресло шезлонг</a></div>
+            <div><a href=""><img src="" alt="">Топчан</a></div>
+            <div><a href=""><img src="" alt="">Комплект уличной мебели</a></div>
+            <div><a href=""><img src="" alt="">Скамейка со спинкой</a></div>
+            <div><a href=""><img src="" alt="">Обеденный стол со стульями</a></div>
+            <div><a href=""><img src="" alt="">Складной стульчик</a></div>
+            <div><a href=""><img src="" alt="">Столик-бар</a></div>
+            <div><a href=""><img src="" alt="">Кофейный столик</a></div>
+            <div><a href=""><img src="" alt="">Матрас для лежака</a></div>
+        </div>
+       <a href="#form" class="button">Оставить заявку</a>
     </section>
     <section>
         <h2 class="header-line">Ничего не подошло?</h2>
         <p class="header-line-middle">Тогда мы можем изготовить для вас мебель</p>
         <p class="header-line-bottom">по индивидуальному дизайну</p>
-        <form>
-            <input class="form" type="text" placeholder="Ваше имя *">
-            <input class="form" type="number" placeholder="Ваш телефон *">
+        <form id="form">
+            <label>
+                <input class="form" type="text" placeholder="Ваше имя *">
+            </label>
+            <label>
+                <input class="form" type="number" placeholder="Ваш телефон *">
+            </label>
             <textarea class="form" name="comment" rows="12" cols="35"></textarea>
             <p>Нажимая на кнопку, вы даете согласие на <a style="color: #9EAF7C;" href="">обработку персональных даных</a></p>
-            <button class="button">Оставить заявку</button>
+            <a href="#form" class="button">Оставить заявку</a>
         </form>
     </section>
     <section>
@@ -131,7 +130,7 @@
                 <p class="how-buy-header">Получение</p> 
                 <p class="how-buy-text">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
         </ul>
-        <button class="button">Оставить заявку</button>
+        <a href="#form" class="button">Оставить заявку</a>
     </section>
     <section>
         <h2 class="header-block">Отзывы</h2>
@@ -171,7 +170,7 @@
                 </p>
             </li>
         </ul>
-        <button class="button">Оставить заявку</button>
+        <a href="#form" class="button">Оставить заявку</a>
     </section>
     <section>
 
@@ -184,23 +183,13 @@
             <li> <a href=""><img src="" alt="">ТРЦ “Грандпарк”</a></li>
             <li> <a href=""><img src="" alt="">ГК Шымбулак</a></li>
         </ul>  
-
-        <h2>Наши клиенты</h2>
-        <ul>
-            <li> <a href=""><img src="" alt=""><p>Аквапарк Майами</p></a></li>
-            <li> <a href=""><img src="" alt=""><p>Аквапарк Гаваии</p></a></li>
-            <li> <a href=""><img src="" alt=""><p>Аквапарк Акватаун</p></a></li>
-            <li> <a href=""><img src="" alt=""><p>Бассейн Баганашил</p></a></li>
-            <li> <a href=""><img src="" alt=""><p>ТРЦ “Грандпарк”</p></a></li>
-            <li> <a href=""><img src="" alt=""><p>ГК Шымбулак</p></a></li>
-
-        </ul>
-    </section>    
+        </section>    
     </main>
 
     <footer>
         <h2 class="header-block">Контакты</h2>
-        <img src="" alt="">
+        <div class="end_site">
+            <img src="" alt="">
         <p>Адрес - <a href="">Москва, Степана Разина 119</a></p>
         <p>Телефон - <a href="">7 982 658 25 85</a></p> 
         <p>ТОО «Консалтинговая Компания</p>
@@ -211,6 +200,8 @@
         <p>ИИК KZ76 9650 3F00 0817 5335</p>
         <p>БИК IRTYKZKA в АО "ForteBank"</p>
         <p>мобильный/ватсап<a href="">+ 7 778 775 77 68</a>,<a href="">info@fintax.kz</a></p>
+        </div>
+        
     </footer>
    
 </body>
