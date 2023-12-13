@@ -63,8 +63,8 @@ body{
 }
 
 .fon{
-  background-image:url(../img/fonverh.png), url(../img/fon1.jpg);
-  position: relative;
+  position: absolute;
+  margin: 0 auto;
 
 }
 
@@ -77,10 +77,10 @@ p{
 }
 
 #section_1{
+  padding-top: 130px;
   margin: 0 auto;
-  background-image: url(), url();
+  background-image:url(../img/fonverh.png), url(../img/fon1.jpg);
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .header_1{
@@ -210,6 +210,8 @@ padding-left: 45px;
 }
 
 .button{
+  display: block;
+  padding-top: 24px;
   text-align: center;
   color: #fff; font-family: Inter; 
   font-size: 1.6rem;
@@ -237,8 +239,21 @@ line-height: normal;
 letter-spacing: -1.08px;
 padding-left: 95px;
 padding-right: 34px;
-margin-bottom: 0px;
+margin-bottom: 46px;
 margin-top: 57px;
+}
+
+.spisok{
+  position: relative;
+}
+
+.car::marker{
+  content: "url(../img/car.svg)";
+  background-color: #9EAF7C;
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
 }
 
 .trans-text li{
@@ -252,6 +267,7 @@ margin-top: 57px;
 }
 
 .katalog{
+  display: grid;
   color: #4B4B4B;
   font-family: Philosopher;
   font-size: 1.6rem;
