@@ -1,0 +1,8 @@
+@mixin wrapper {
+    margin-inline: 45px;
+    max-width: 1160px;
+
+    @media screen and (min-width: 1159px) {
+        margin-inline: auto;
+    }
+}

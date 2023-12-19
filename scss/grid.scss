@@ -1,0 +1,152 @@
+@use 'utils/variables';
+
+main {
+    padding: 130px 0;
+}
+
+.header {
+    background-color: variables.$main-color;
+}
+
+.template__box {
+    height: 300px;
+    width: 100%;
+    border-radius: 10%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 70px);
+}
+
+.template__item {
+    border: solid black 2px;
+}
+
+.template__item1 {
+    grid-row: span 3;
+    background-color: red;
+    border-radius: 10% 0 0 0;
+}
+
+.template__item2 {
+    grid-column: span 2;
+    background-color: yellow;
+}
+
+.template__item3 {
+    background-color: red;
+    grid-row: span 2;
+    border-radius: 0 10% 0 0;
+}
+
+.template__item4 {
+    grid-row: span 2;
+}
+
+.template__item5 {
+    grid-row: span 2;
+}
+
+.template__item8 {
+    grid-column: span 2;
+}
+
+.template__item9 {
+   grid-row: span 2;
+}
+
+.template__item11 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: blue;
+}
+
+.template__item12 {
+    background-color: black;
+    border-radius: 0 0 0 10%;
+}
+
+.template__item13 {
+    background-color: yellow;
+    border-radius: 0 0 10% 0;
+}
+
+.dashboard {
+    margin: 60px;
+    padding: 20px;
+    border: solid blue 2px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.dashboard__aside {
+    display: grid;
+    gap: 20px;
+}
+
+.dashboard__main {
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    justify-items: center;
+    
+}
+
+.graph1 {
+    grid-column: span 6;
+}
+
+.graph2 {
+    grid-column: span 2;
+}
+
+.graph3 {
+    grid-column: span 2;
+}
+
+.graph4 {
+    grid-column: span 2;
+}
+
+.graph5 {
+    grid-column: span 3;
+}
+
+.graph6 {
+    grid-column: span 3;
+}
+
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery>div {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    "link";
+    width: 100%;
+    border: 2px black solid;
+}
+
+.gallery>div>img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: link;
+}
+
+.gallery>div>a {
+    grid-area: link;
+    font-size: 3rem;
+}
+
+.gallery>div>a:hover {
+    color:aliceblue;
+    font-size: 5rem;
+    transition: 0.3s;
+}

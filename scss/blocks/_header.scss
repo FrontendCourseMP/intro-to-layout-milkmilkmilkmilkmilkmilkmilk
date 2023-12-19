@@ -1,0 +1,104 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.header {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    padding-top: 25px;
+    color: variables.$subtext-color;
+
+    @media screen and (min-width:959px) {
+        padding-top: 0;
+    }
+}
+
+.header__sub {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    font-family: 'Inter Light';
+    font-size: 1.35rem;
+    gap: 75px;
+
+    @media screen and (max-width:958px) {
+        display: none;
+    }
+}
+
+.header__benefits-phone {
+    border: 1px solid variables.$subtext-color;
+    border-radius: 20px;
+    padding: 3px 8px;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__wrapper {
+    @include mixins.wrapper;
+}
+
+.header__link {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$subtext-color;
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 959px) {
+        font-size: 5.25rem;
+    }
+}
+
+.header__nav {
+    font-family: 'Inter Light', sans-serif;
+    letter-spacing: -1.08px;
+    display: flex;
+    align-items: center;
+    font-size: 1.35rem;
+    gap: 52px;
+
+    @media screen and (max-width: 929px) {
+        display: none;
+    }
+}
+
+.header__nav-item:hover {
+    text-decoration: underline;
+    color: variables.$main-color;
+    transition: 0.1s;
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__social-item {
+    padding: 9px;
+    border: solid 1px variables.$subtext-color;
+    border-radius: 50px;
+
+    @media screen and (max-width: 1159px) {
+        display: none;
+    }
+}
+
+.header__social-item:last-child {
+    background-color: variables.$main-color;
+    border-color: variables.$main-color;
+}
+
+.header__btn {
+    border-radius: 60px;
+    padding: 14.5px 13px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 929px) {
+        display: none;
+    }
+}

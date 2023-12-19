@@ -1,0 +1,111 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.about__wrapper {
+    @include mixins.wrapper;
+    margin-top: 5px;
+}
+
+.about__main {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:795px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__img {
+    align-self: center;
+    margin-top: 35px;
+    border-radius: 20px;
+
+    @media screen and (min-width:795px) {
+        order: 2;
+        width: 315px;
+    }
+
+    @media screen and (min-width:1300px) {
+        width: 390px;
+    } 
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 42px;
+    gap: 52px;
+
+    @media screen and (min-width:1300px) {
+        gap: 62px;
+        margin-top: 60px;
+    }
+}
+
+.about__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    line-height: 140%;
+
+    @media screen and (min-width:1300px) {
+        font-size: 1.8rem;
+    }
+}
+
+.about__number {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$main-color;
+    font-size: 5.25rem;
+    line-height: 70%;
+
+    @media screen and (min-width:1300px) {
+        font-size: 7rem;
+    }
+}
+
+.about__item:last-child {
+    .about__number{
+        font-size: 2.25rem;
+        max-width: 200px;
+        align-self: center;
+
+        @media screen and (min-width:1300px) {
+            font-size: 3.7rem;
+            max-width: 380px;
+        }   
+    }    
+}
+
+.about__decor {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+
+    @media screen and (max-width:1300px) {
+        width: 270px;
+    }   
+}
+
+.about__decor--rotate {
+    transform: translate(-50%,-25%) rotate(8deg);
+}
+
+.about__btn {
+    margin-top: 50px;
+
+        @media screen and (min-width:795px) and (max-width:1299px) {
+            width: 340px;
+        }  
+}
+

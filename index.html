@@ -1,210 +1,356 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>Logo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="scss/style.css">
+    <title>*шепотом* ребята, мы в казахстане</title>
 </head>
 <body>
-    <header class="fon">
-        <div class="header_1">
-            <a href=""><img src="../img/Logo.svg" alt=""></a>
-            <button class="burger"><img src="../img/burger.svg" alt=""></button>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__sub">
+                <p class="header__benefits-address">г. Алматы, ул. Абая д.68</p>
+                <p class="header__benefits-shedule">Звоните, Пн-Пт с 10:00-18:00
+                    <a href="tel:+7(900)900-10-10" class="header__benefits-telephone">+7 (900) 900 - 10 - 10</a>
+                </p> 
+            </div>
+            <div class="header__main">
+                <a href="index.html" class="header__link">Logo</a>
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">О комании</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Об изделиях</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Сотрудничество</a></li>
+                </ul>
+                <ul class="header__social">
+                    <li class="header__social-item"><a href="#"><img src="image/instagram.svg" alt="" class="header__social-icon"></a></li>
+                    <li class="header__social-item"><a href="#"><img src="image/telegram.svg" alt="" class="header__social-icon"></a></li>
+                    <li class="header__social-item"><a href="#"><img src="image/watsupp.svg" alt="" class="header__social-icon"></a></li>
+                </ul>
+                <button class="header__button">
+                    <img src="image/burger.svg" alt="Навигация" class="header__burger">
+                </button>
+            </div>
         </div>
-        
     </header>
-    <main>
-    <section id="section_1">        
-       <h1 class="visually-hidden"></h1>
-        
-            <div class="section_1 wrapper_text">
-                <p class="header-line">Уличная мебель</p>
-                <p class="header-line-middle">из натурального дерева</p> 
-                <p class="header-line-bottom">от Казахстанского производителя</p>
-            
-                <a href="#form" class="button">Оставить заявку</a>
-                <div class="trans-text">
-                    <ul class="spisok">
-                        <li class="car">Доставка по всему Казахстану и в страны СНГ</li>
-                        <li>Для дома, дачи, зон отдыха и аквапарков</li>
-                        <li>Долговечная и надёжная</li>
-                    </ul>
+
+    <main class="main">
+        <section class="main__promo promo">
+            <div class="promo__wrapper">
+                <div class="promo__title">
+                    <h1 class="promo__name-title">Уличная мебель</h1>
+                    <img src="image/waves-1.svg" alt="" class="promo__svg">
+                    <p class="promo__material-title">из натурального дерева</p>
+                    <p class="promo__from-title">от Казахстанского производителя</p>
                 </div>
-            <img src="../img/heart-wall.svg" alt="">
+                <button class="promo__button">Оставить заявку</button>
+                <ul class="promo__list">
+                    <li class="promo__list-item">
+                        <img src="image/truck.webp" alt="" class="promo__list-icon">
+                        Доставка по всему Казахстану и в страны СНГ
+                    </li>
+                    <li class="promo__list-item">
+                        <img src="image/cottage.webp" alt="" class="promo__list-icon">
+                        Для дома, дачи, зон отдыха и аквапарков
+                    </li>
+                    <li class="promo__list-item">
+                        <img src="image/shield.webp" alt="" class="promo__list-icon">
+                        Долговечная и надёжная
+                    </li>
+                </ul>
             </div>
-            
-            
-            
-        
-    </section>
-    <section>
-        <h2 class="header-block">О компании</h2>
-        <img style="border-radius: 20px; margin-left: 46px;" src="../img/pila.jpg" alt="">
-        <div class="krugi">
-            <p class="big-text large-text krugi__title">12</p>
-            <p class="about-text">Лет на рынке</p>
-        </div>
-        <div class="krugi-rev">
-            <p class="big-text large-text krugi__title">2000+</p> 
-            <p class="about-text">Довольных покупателей</p>
-        </div>
-        <div class="krugi">
-            <p class="big-text krugi__title">Собственное<br> производство</p>
-            <p class="about-text"> в г. Алматы</p>
-        </div>
-        <a href="#form" class="button">Оставить заявку</a>
+            <img src="image/hearts.svg" alt="" class="promo__decor">
+        </section>
 
-    </section>
-    <section class="about_section">
-        <h2 class="header-block"> Об изделиях</h2>
-        <div class="about-product">
-            <div class="li-content_1">
-                <h3 class="li_h3_1">Обработанное дерево</h3> 
-                <p class="text-desc">Сохраняет <span style="font-weight: 600;">первоначальный 
-                    внешний вид</span> даже под воздействием солнца и влаги</p>
+        <section class="main__about about">
+            <div class="about__wrapper">
+                <h2 class="about__title">О компании</h2>
+                <div class="about__main">
+                    <img src="image/process.webp" alt="" class="about__img">
+                    <div class="about__info">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__number">12</span>
+                                Лет на рынке
+                                <img src="image/decor.svg" alt="" class="about__decor">
+                            </li>
+                            <li class="about__item">
+                                <span class="about__number">2000+</span>
+                                Довольных покупателей
+                                <img src="image/decor.svg" alt="" class="about__decor about__decor--rotate">
+                            </li>
+                            <li class="about__item">
+                                <span class="about__number">Собственное производство</span>
+                                в г.Алматы
+                                <img src="image/decor.svg" alt="" class="about__decor">
+                            </li>
+                        </ul>
+                        <button class="about__button">Оставить заявку</button>
+                    </div>
+                </div>
             </div>
-        
-            <div class="li-content_2">
-                <h3 class="li_h3_2">Натуральное дерево</h3> 
-                <p class="text-desc">Лиственница, ангарская сосна, дуб, карагач</p>
-            </div>   
-        
-                  
-            <div class="li-content_3">
-                <h3 class="li_h3_3">Акриловая ткань</h3> 
-                <p class="text-desc">Обладает <span style="font-weight: 600;">водо- и грязеоталкивающими свойствами,</span> ткань сохраняет
-                    цвет окраса даже после стирки и длительного воздействия солнца</p> 
+        </section>
+
+        <section class="main__product product">
+            <div class="product__wrapper">
+                <h2 class="product__title">Об изделиях</h2>
+                <div class="product__first-item product__item">
+                    <img src="image/plus.svg" alt="" class="product__icon">
+                    <div class="product__item-main">
+                        <h3 class="product__item-title">Обработанное дерево</h3>
+                        <p class="product__item-info">
+                            Сохраняет
+                            <span class="product__item-span">первоначальный внешний вид</span>
+                            даже под воздействием солнца и влаги
+                        </p>
+                    </div>
+                </div>
+                <img src="image/sofa.webp" alt="" class="product__first-img">
+                <div class="product__second-item product__item">
+                    <img src="image/plus.svg" alt="" class="product__icon">
+                    <div class="product__item-main">
+                        <h3 class="product__item-title">Натуральное дерево</h3>
+                        <p class="product__item-info">Лиственница, ангарская сосна, дуб, карагач</p>
+                    </div>
+                </div>
+                <img src="image/sofa.webp" alt="" class="product__second-img">
+                <button class="product__button">Оставить заявку</button>
+                <div class="product__third-item product__item">
+                    <img src="image/plus.svg" alt="" class="product__icon">
+                    <div class="product__item-main">
+                        <h3 class="product__item-title">Акриловая ткань</h3>
+                        <p class="product__item-info">
+                            Обладает
+                            <span class="product__item-span">водо- и грязеоталкивающими свойствами,</span>
+                            ткань сохраняет цвет окраса даже после стирки и длительного воздействия солнца
+                        </p>
+                    </div>
+                </div>
             </div>
-                
-        </div>
-    </section>
-    <section>
-        <h2 class="header-block">Каталог</h2>
-        <div class="katalog">
-            <div><a href=""><img src="" alt="">Классический лежак</a></div>
-            <div><a href=""><img src="" alt="">Кресло шезлонг</a></div>
-            <div><a href=""><img src="" alt="">Топчан</a></div>
-            <div><a href=""><img src="" alt="">Комплект уличной мебели</a></div>
-            <div><a href=""><img src="" alt="">Скамейка со спинкой</a></div>
-            <div><a href=""><img src="" alt="">Обеденный стол со стульями</a></div>
-            <div><a href=""><img src="" alt="">Складной стульчик</a></div>
-            <div><a href=""><img src="" alt="">Столик-бар</a></div>
-            <div><a href=""><img src="" alt="">Кофейный столик</a></div>
-            <div><a href=""><img src="" alt="">Матрас для лежака</a></div>
-        </div>
-       <a href="#form" class="button">Оставить заявку</a>
-    </section>
-    <section>
-        <h2 class="header-line">Ничего не подошло?</h2>
-        <p class="header-line-middle">Тогда мы можем изготовить для вас мебель</p>
-        <p class="header-line-bottom">по индивидуальному дизайну</p>
-        <form id="form">
-            <label>
-                <input class="form" type="text" placeholder="Ваше имя *">
-            </label>
-            <label>
-                <input class="form" type="number" placeholder="Ваш телефон *">
-            </label>
-            <textarea class="form" name="comment" rows="12" cols="35"></textarea>
-            <p>Нажимая на кнопку, вы даете согласие на <a style="color: #9EAF7C;" href="">обработку персональных даных</a></p>
-            <a href="#form" class="button">Оставить заявку</a>
-        </form>
-    </section>
-    <section>
-        <h2 class="header-block">Как получить заказ?</h2>
-        <ul>
-            <li>
-                <img src="" alt="">
+        </section>
 
-                <p class="how-buy-header">Заявка</p>
-                <p class="how-buy-text">Оставьте заявку и наш менеджер свяжется с вами в течении 15-ти минут</p>
-            </li>
-            <li>
-                <img src="" alt="">
-                <p class="how-buy-header">Предоплата</p> 
-                <p class="how-buy-text">После внесения предоплаты в 100% 
-                    от суммы чека мы отправляем заказ транспортными компаниями</p>
-            </li>
-            <li>
-                <img src="" alt="">
-                <p class="how-buy-header">Получение</p> 
-                <p class="how-buy-text">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
-        </ul>
-        <a href="#form" class="button">Оставить заявку</a>
-    </section>
-    <section>
-        <h2 class="header-block">Отзывы</h2>
-        <ul>
-            <li>
-                <img src="" alt="">
+        <section class="main__catalog catalog">
+            <div class="catalog__wrapper">
+                <h2 class="catalog__title">Каталог</h2>
+                <ul class="catalog__big-list">
+                    <li class="catalog__big-item">
+                        <img src="image/productbig-1.webp" alt="Товар" class="catalog__big-img">
+                        <a href="#" class="catalog__big-name">Классический лежак</a>
+                        <img src="image/waves-2.svg" alt="" class="catalog__name-svg">
+                    </li>
+                    <li class="catalog__big-item">
+                        <img src="image/productbig-2.webp" alt="Товар" class="catalog__big-img">
+                        <a href="#" class="catalog__big-name">Кресло шезлонг</a>
+                    </li>
+                </ul>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <img src="image/product-1.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Топчан</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-2.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Топчан</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-3.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Комплект уличной мебели</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-4.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Скамейка со спинкой</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-5.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Обеденный стол со стульями</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-6.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Складной стульчик</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-7.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Столик-бар</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-8.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Кофейный столик</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="image/product-9.webp" alt="Товар" class="catalog__img">
+                        <a href="#" class="catalog__name">Матрас для лежака</a>
+                    </li>
+                </ul>
+                <button class="catalog__button">Оставить заявку</button>
+            </div>
+        </section>
+        <section class="feedback">
+            <img src="image/hearts.svg" alt="" class="feedback__first-decor">
+            <div class="feedback__wrapper">
+                <h2 class="feedback__name-title">Ничего не подошло?</h2>
+                <img src="image/waves-3.svg" alt="" class="feedback__svg">
+                <p class="feedback__title-about">Тогда мы можем изготовить для вас мебель</p>
+                <p class="feedback__title-answer">по индивидуальному дизайну</p>
+                <form feedback="#" class="feedback__form">
+                    <input type="text" placeholder='Ваше имя *' class="feedback__input-name">
+                    <input type="text" placeholder='Ваш телефон *' class="feedback__input-telephone">
+                    <textarea  placeholder='Ваш комментарий' cols="30" rows="5" class="feedback__input-comment"></textarea>
+                        <div class="feedback__condition">
+                            <p class="feedback__permission">Нажимая на кнопку, вы даете согласие на
+                                <a href="#" class="feedback__link">обработку персональных даных</a>
+                            </p>
+                        </div>
+                    <button class="feedback__button">Оставить заявку</button>
+                </form>
+            </div>
+            <img src="image/hearts.svg" alt="" class="feedback__second-decor">
+        </section>
 
-                <h3 class="feedback-autor">
-                    Анна
-                    Иванова
-                </h3>
-                <p class="feedback-text">Качество и прочность этой мебели просто потрясают меня. Она изготовлена из высококачественного дерева, которое не только выглядит прекрасно, но и обладает прочными свойствами. Мебель выдерживает даже интенсивное использование и долгие периоды на открытом воздухе, сохраняя свою привлекательность и функциональность.
-                    Дачная мебель из дерева также добавила особый шарм и натуральность моему саду. Она гармонично вписывается в окружающую природу и создает приятную атмосферу для отдыха и проведения времени на природе. Кроме того, дерево придает мебели теплоту и природную красоту, что делает ее привлекательной для глаза и приятной на ощупь.
-                </p>
-            </li>
-            <li>
-                <img src="" alt="">
+        <section class="main__order order">
+            <div class="order__wrapper">
+                <h2 class="order__title">Как получить заказ?</h2>
+                <ul class="order__list">
+                    <li class="order__item">
+                        <img src="image/computer.svg" alt="Иконка" class="order__img">
+                        <img src="image/waves-4.svg" alt="" class="order__svg">
+                        <div class="order__about">
+                            <h3 class="order__list-title">Заявка</h3>
+                            <p class="order__info">Оставьте заявку и наш менеджер свяжется с вами в течении 15-ти минут</p>
+                        </div>
+                    </li>
+                    <li class="order__item">
+                        <img src="image/medal.svg" alt="Иконка" class="order__img">
+                        <img src="image/waves-4.svg" alt="" class="order__svg">
+                        <div class="order__about">
+                            <h3 class="order__list-title">Предоплата</h3>
+                            <p class="order__info">После внесения предоплаты в 100% от суммы чека мы отправляем заказ транспортными компаниями</p>
+                        </div>
+                    </li>
+                    <li class="order__item">
+                        <img src="image/mark.svg" alt="Иконка" class="order__img">
+                        <img src="image/waves-4.svg" alt="" class="order__svg">
+                        <div class="order__about">
+                            <h3 class="order__list-title">Получение</h3>
+                            <p class="order__info">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="order__button">Оставить заявку</button>
+            </div>
+        </section>
 
-                <h3 class="feedback-autor">
-                    Кирилл
-                    Котов
-                </h3>
-                <p class="feedback-text">
-                    Я бы хотел поделиться своим восхищением относительно мебели из дерева для моей дачи. Она превратила мою отдыхающую зону в настоящий райский уголок и добавила неповторимую атмосферу природы и комфорта.
-Первое, что я заметил, это качество изготовления. Каждая деталь моей дачной мебели тщательно вырезана и скручена, создавая прочную и устойчивую конструкцию. Дерево, используемое в изготовлении, кажется очень прочным и долговечным, что делает мою мебель идеальной для использования на открытом воздухе.
-                </p>    
-            </li>
-            <li>
-                <img src="" alt="">
+        <section class="main__reviews reviews">
+            <div class="reviews__wrapper">
+                <h2 class="reviews__title">Отзывы</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="image/annaivanova.webp" alt="" class="reviews__user-logo">
+                            <p class="reviews__user-name">Анна Иванова</p>
+                        </div>
+                        <img src="image/waves-4.svg" alt="" class="reviews__svg">
+                        <blockquote class="reviews__about">
+                            Качество и прочность этой мебели просто потрясают меня. Она изготовлена из высококачественного дерева, которое не только выглядит
+                            прекрасно, но и обладает прочными свойствами. Мебель выдерживает даже интенсивное использование и долгие периоды на открытом воздухе,
+                            сохраняя свою привлекательность и функциональность. Дачная мебель из дерева также добавила особый шарм и натуральность моему саду.
+                            Она гармонично вписывается в окружающую природу и создает приятную атмосферу для отдыха и проведения времени на природе. Кроме того,
+                            дерево придает мебели теплоту и природную красоту, что делает ее привлекательной для глаза и приятной на ощупь.
+                        </blockquote>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="image/kirillkotov.webp" alt="" class="reviews__user-logo">
+                            <p class="reviews__user-name">Кирилл Котов</p>
+                        </div>
+                        <img src="image/waves-4.svg" alt="" class="reviews__svg">
+                        <blockquote class="reviews__about">
+                            Я бы хотел поделиться своим восхищением относительно мебели из дерева для моей дачи. Она превратила мою отдыхающую зону в настоящий райский уголок и добавила неповторимую атмосферу природы и комфорта.
+                            Первое, что я заметил, это качество изготовления. Каждая деталь моей дачной мебели тщательно вырезана и скручена, создавая прочную и устойчивую конструкцию. Дерево, используемое в изготовлении,
+                            кажется очень прочным и долговечным, что делает мою мебель идеальной для использования на открытом воздухе.
+                        </blockquote>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="image/andrewgolovin.webp" alt="" class="reviews__user-logo">
+                            <p class="reviews__user-name">Андрей Головин</p>
+                        </div>
+                        <img src="image/waves-4.svg" alt="" class="reviews__svg">
+                        <blockquote class="reviews__about">
+                            В целом, дачная мебель из дерева оправдала все наши ожидания и стала незаменимым элементом нашего загородного участка. Мы наслаждаемся ее красотой,
+                            прочностью и функциональностью, и настоятельно рекомендуем ее всем, кто ищет качественную и привлекательную мебель для отдыха на своей даче.
+                        </blockquote>
+                    </li>
+                </ul>
+                <button class="reviews__button">Оставить заявку</button>
+            </div>
+        </section>
 
-                <h3 class="feedback-autor">
-                    Андрей 
-                    Головин
-                </h3>
-                <p class="feedback-text">
-                    В целом, дачная мебель из дерева оправдала все наши ожидания и стала незаменимым элементом нашего загородного участка. Мы наслаждаемся ее красотой, прочностью и функциональностью, и настоятельно рекомендуем ее всем, кто ищет качественную и привлекательную мебель для отдыха на своей даче.
-                </p>
-            </li>
-        </ul>
-        <a href="#form" class="button">Оставить заявку</a>
-    </section>
-    <section>
-
-        <h2 class="header-block">Наши клиенты</h2>
-        <ul class="our-clients">
-            <li> <a href=""><img src="" alt="">Аквапарк Майами</a></li>
-            <li> <a href=""><img src="" alt="">Аквапарк Гаваии</a></li>
-            <li> <a href=""><img src="" alt="">Аквапарк Акватаун</a></li>
-            <li> <a href=""><img src="" alt="">Бассейн Баганашил</a></li>
-            <li> <a href=""><img src="" alt="">ТРЦ “Грандпарк”</a></li>
-            <li> <a href=""><img src="" alt="">ГК Шымбулак</a></li>
-        </ul>  
-        </section>    
+        <section class="main__clients clients">
+            <div class="clients__wrapper">
+                <h2 class="clients__title">Наши клиенты</h2>
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <img src="image/miamibeach.webp" alt="" class="clients__logo">
+                        <p class="clients__name">Аквапарк Майами</p>
+                    </li>
+                    <li class="clients__item">
+                        <img src="image/hawaii.webp" alt="" class="clients__logo">
+                        <p class="clients__name">Аквапарк Гаваии</p>
+                    </li>
+                    <li class="clients__item">
+                        <img src="image/aquatown.webp" alt="" class="clients__logo">
+                        <p class="clients__name">Аквапарк Акватаун</p>
+                    </li>
+                    <li class="clients__item">
+                        <img src="image/bb.webp" alt="" class="clients__logo">
+                        <p class="clients__name">Бассейн Баганашил</p>
+                    </li>
+                    <li class="clients__item">
+                        <img src="image/grandpark.webp" alt="" class="clients__logo">
+                        <p class="clients__name">ТРЦ “Грандпарк”</p>
+                    </li>
+                    <li class="clients__item">
+                        <img src="image/shymbulak.webp" alt="" class="clients__logo">
+                        <p class="clients__name">ГК Шымбулак</p>
+                    </li>
+                </ul>
+                <div class="clients__slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="8" fill="#9EAF7C" fill-opacity="0.5"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="8" fill="#9EAF7C" fill-opacity="0.5"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="8" fill="#9EAF7C" fill-opacity="0.5"/>
+                    </svg>
+                </div>
+                <button class="clients__button">Оставить заявку</button>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <h2 class="header-block">Контакты</h2>
-        <div class="end_site">
-            <img src="" alt="">
-        <p>Адрес - <a href="">Москва, Степана Разина 119</a></p>
-        <p>Телефон - <a href="">7 982 658 25 85</a></p> 
-        <p>ТОО «Консалтинговая Компания</p>
-        <p>Financial-Tax Analytics»</p>
-        <p>БИН 181 040 010 133</p>
-        <p>Юридический адрес: <a href="">г.Астана, пр.Мәңгілік Ел, 19, к.304</a></p>
-        <p>Почтовый адрес: <a href="">г.Астана, ул.Кордай, 2, кв.60</a></p>
-        <p>ИИК KZ76 9650 3F00 0817 5335</p>
-        <p>БИК IRTYKZKA в АО "ForteBank"</p>
-        <p>мобильный/ватсап<a href="">+ 7 778 775 77 68</a>,<a href="">info@fintax.kz</a></p>
+    <footer class="footer">
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__info">
+            <img src="image/map.webp" alt="Карта" class="footer__map">
+            <div class="footer__background">
+                <ul class="footer__list">
+                    <li class="footer__item">гриды</a></li>
+                    <li class="footer__item">Адрес - Москва, Степана Разина 119</li>
+                    <li class="footer__item">Телефон - 7 982 658 25 85</li>
+                    <li class="footer__item">ТОО «Консалтинговая Компания Financial-Tax Analytics»</li>
+                    <li class="footer__item">БИН 181 040 010 133</li>
+                    <li class="footer__item">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</li>
+                    <li class="footer__item">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</li>
+                    <li class="footer__item">ИИК KZ76 9650 3F00 0817 5335</li>
+                    <li class="footer__item">БИК IRTYKZKA в АО "ForteBank"</li>
+                    <li class="footer__item footer__item--last">мобильный/ватсап + 7 778 775 77 68, info@fintax.kz <a href="grid.html"></a></li>
+                </ul>
+            </div>
         </div>
-        
     </footer>
-   
 </body>
 </html>

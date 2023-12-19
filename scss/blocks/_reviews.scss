@@ -1,0 +1,77 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.reviews__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__title {
+    margin-top: 56px;
+}
+
+.reviews__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+    gap: 18px;
+
+    @media screen and (min-width: 1020px) {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
+}
+
+.reviews__item {
+    background: variables.$subtext-color;
+    border-radius: 20px;
+    padding: 16px 18px 40px 18px;
+    max-width: 300px;
+    height: 480px;
+
+    @media screen and (min-width: 1159px) {
+        height: 560px;
+    }
+}
+
+.reviews__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.reviews__user-logo {
+    margin-right: 24px;
+}
+
+.reviews__user-name {
+    font-size: 2.1rem;
+    max-width: 120px;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2.55rem;
+    }
+}
+
+.reviews__svg {
+    margin-left: -5px;
+    width: 100%;
+}
+
+.reviews__about {
+    font-family: 'Philosopher', serif;
+    font-size: 1.4rem;
+    margin-top: 15px;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 1.6rem;
+    }
+}
+
+.reviews__btn {
+    margin-top: 55px;
+}
+

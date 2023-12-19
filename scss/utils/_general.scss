@@ -1,0 +1,68 @@
+@use '../utils/variables';
+
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: variables.$background-color;
+    font-size: 1.6rem;
+    color: variables.$text-color;
+}
+
+main {
+    font-family: "Philosopher Bold", serif;
+    button {
+        padding: 20px 0;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+
+        @media screen and (min-width:959px) {
+            width: 560px;
+        }
+    }
+
+    button:hover {
+        background-color: variables.$subbackground-color;
+        transition: 0.15s;
+    }
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    line-height: 120%;
+    border-radius: 20px;
+    color: variables.$subtext-color;
+    background: variables.$main-color;
+    letter-spacing: -0.32px;
+
+    @media screen and (min-width:959px) {
+        font-size: 1.8rem;
+    }
+}
+
+h1 {
+    font-size: 3.4rem;
+    letter-spacing: -2.04px;
+
+    @media screen and (min-width: 959px) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-family: 'Philosopher Italic', serif;
+    font-size: 3.8rem;
+
+    @media screen and (min-width:959px) {
+        font-size: 5.4rem;
+    }
+
+}
+
+input {
+    border-radius: 60px;
+    padding: 16px;
+}

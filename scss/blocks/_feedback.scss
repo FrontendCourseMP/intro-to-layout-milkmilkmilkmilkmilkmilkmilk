@@ -1,0 +1,121 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.feedback {
+    overflow: hidden;
+    font-family: 'Inter Light', sans-serif;
+    color: variables.$subtext-color;
+    background-color:variables.$subbackground-color;
+    background-image: url(../../image/background_form.webp);
+    background-position: 70%;
+    background-size: cover;
+}
+
+.feedback__wrapper {
+    @include mixins.wrapper;
+    padding: 50px 0 63px 0;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+}
+
+.feedback__name-title {
+    font-size: 3rem;
+    font-family: 'Inter Light', sans-serif;
+    letter-spacing: -1.92px;
+
+    @media screen and (min-width: 900px) {
+        font-size: 3.75rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .feedback__svg {
+        width: 340px;
+    }
+}
+
+.feedback__title-about {
+    font-size: 2.4rem;
+    letter-spacing: -1.44px;
+    
+    @media screen and (min-width: 900px) {
+        font-size: 3.15rem;
+        margin-top: 10px;
+    }
+}
+
+.feedback__title-answer {
+    font-family: 'Philosopher Italic', serif;
+    font-size: 3.2rem;
+    text-align: end;
+
+    @media screen and (min-width: 900px) {
+        font-size: 6rem;
+    }
+}
+
+.feedback__input-name {
+    margin-top: 50px;
+}
+
+.feedback__input-telephone {
+    margin-top: 20px;
+}
+
+.feedback__input-comment {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.feedback__condition {
+    line-height: 120%;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.feedback__link {
+    color: variables.$main-color;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 1.2rem;
+    }
+}
+
+.feedback__link:hover {
+    text-decoration: underline;
+}
+
+.feedback__btn {
+    margin-top: 23px;
+    max-width: 465px;
+}
+
+.feedback__first-decor {
+    position: relative;
+    left: 50%;
+    margin-top: -20px;
+    transform: rotate(180deg) translatex(50%);
+
+    @media screen and (min-width: 1365px) {
+        width: 110%;
+        margin-top: -40px;
+    }
+}
+
+.feedback__second-decor {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-bottom: -20px;
+
+    @media screen and (min-width: 1365px) {
+        width: 110%;
+        margin-bottom: -40px;
+    }
+}
+

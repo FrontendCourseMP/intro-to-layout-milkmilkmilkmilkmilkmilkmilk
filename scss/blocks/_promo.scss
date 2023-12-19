@@ -1,0 +1,103 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.promo {
+    overflow:hidden;
+    font-family: 'Inter Light', sans-serif;
+    color: variables.$subtext-color;
+    background-color: variables.$subbackground-color;
+    padding-top: 130px;
+    background-image: url(../../image/background_promo.webp);
+    background-position: 57%;
+    background-size: cover;
+}
+
+.promo__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.promo__title {
+    max-width: 600px;
+
+    @media screen and (min-width: 959px) {
+        max-width: 887px;
+    }
+}
+
+@media screen and (min-width: 959px){
+    .promo__svg {
+        width: 358px;
+    }
+}
+
+.promo__material-title {
+    font-family: 'Philosopher Italic', serif;
+    font-size: 3.8rem;
+
+    @media screen and (min-width: 959px) {
+        font-size: 6rem;
+    }
+}
+
+.promo__from-title {
+    font-size: 3.4rem;
+    text-align: right;
+    letter-spacing: -2.04px;
+
+    @media screen and (min-width: 959px) {
+        font-size: 3.75rem;
+    } 
+}
+
+.promo__btn {
+    margin-top: 35px;
+    align-self: start;
+}
+
+.promo__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    gap: 14px;
+
+    @media screen and (min-width: 733px) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.promo__list-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.35rem;
+    letter-spacing: -1.08px;
+    gap: 16px;
+
+    @media screen and (min-width: 959px) {
+        font-size: 2.6rem;
+    }
+}
+
+.promo__list-icon {
+    background: variables.$main-color;
+    border-radius: 50%;
+    width: 60px;
+    padding: 13px;
+    overflow: visible;
+}
+
+.promo__decor {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-bottom: -20px;
+
+    @media screen and (min-width: 959px) {
+        width: 110%;
+        margin-bottom: -50px;
+    }
+}
