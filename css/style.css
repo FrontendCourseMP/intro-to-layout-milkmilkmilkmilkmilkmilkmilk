@@ -1,3 +1,76 @@
+@font-face {
+  font-family: "Inter Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Inter-Light.eot");
+  src: local("Inter Light"), url("../fonts/Inter-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff"), url("../fonts/Inter-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("Inter Regular"), url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("Inter Medium"), url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold.eot");
+  src: local("Inter SemiBold"), url("../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/Inter-Bold.eot");
+  src: local("Inter Bold"), url("fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Philosopher Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/Philosopher-Bold.eot");
+  src: local("Philosopher Bold"), url("fonts/Philosopher-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Philosopher-Bold.woff2") format("woff2"), url("fonts/Philosopher-Bold.woff") format("woff"), url("fonts/Philosopher-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Philosopher Italic";
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/Philosopher-Italic.eot");
+  src: local("Philosopher Italic"), url("fonts/Philosopher-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/Philosopher-Italic.woff2") format("woff2"), url("fonts/Philosopher-Italic.woff") format("woff"), url("fonts/Philosopher-Italic.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/Philosopher-Regular.eot");
+  src: local("Philosopher"), url("fonts/Philosopher-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Philosopher-Regular.woff2") format("woff2"), url("fonts/Philosopher-Regular.woff") format("woff"), url("fonts/Philosopher-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "VelaSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/VelaSans-Regular.eot");
+  src: local("VelaSans"), url("fonts/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/VelaSans-Regular.woff2") format("woff2"), url("fonts/VelaSans-Regular.woff") format("woff"), url("fonts/VelaSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,11 +93,11 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:active {
   outline: none;
 }
 
@@ -84,72 +157,40 @@ a {
   color: inherit;
 }
 
-@font-face {
-  font-family: "Inter Light";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../../fonts/Inter-Light.eot");
-  src: local("Inter Light"), url("../../fonts/Inter-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff"), url("../../fonts/Inter-Light.ttf") format("truetype");
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/Inter-Regular.eot");
-  src: local("Inter Regular"), url("../../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Inter Medium";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../../fonts/Inter-Medium.eot");
-  src: local("Inter Medium"), url("../../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Medium.woff2") format("woff2"), url("../../fonts/Inter-Medium.woff") format("woff"), url("../../fonts/Inter-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Inter SemiBold";
-  font-weight: 600;
-  font-style: normal;
-  src: url("../../fonts/Inter-SemiBold.eot");
-  src: local("Inter SemiBold"), url("../../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.woff") format("woff"), url("../../fonts/Inter-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Inter Bold";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../../fonts/Inter-Bold.eot");
-  src: local("Inter Bold"), url("../../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Philosopher Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/Philosopher-Bold.eot");
-  src: local("Philosopher Bold"), url("../../fonts/Philosopher-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Bold.woff2") format("woff2"), url("../../fonts/Philosopher-Bold.woff") format("woff"), url("../../fonts/Philosopher-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Philosopher Italic";
-  font-weight: 400;
-  font-style: italic;
-  src: url("../../fonts/Philosopher-Italic.eot");
-  src: local("Philosopher Italic"), url("../../fonts/Philosopher-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Italic.woff2") format("woff2"), url("../../fonts/Philosopher-Italic.woff") format("woff"), url("../../fonts/Philosopher-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Philosopher";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/Philosopher-Regular.eot");
-  src: local("Philosopher"), url("../../fonts/Philosopher-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Regular.woff2") format("woff2"), url("../../fonts/Philosopher-Regular.woff") format("woff"), url("../../fonts/Philosopher-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VelaSans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/VelaSans-Regular.eot");
-  src: local("VelaSans"), url("../../fonts/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/VelaSans-Regular.woff2") format("woff2"), url("../../fonts/VelaSans-Regular.woff") format("woff"), url("../../fonts/VelaSans-Regular.ttf") format("truetype");
-}
+
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #687557;
+}
+
+::selection {
+  background-color: #687557;
+}
+
+::-moz-placeholder {
+  color: #687557;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: #687557;
+  font-size: 1.5rem;
 }
 
 body {
@@ -162,19 +203,38 @@ main {
   font-family: "Philosopher Bold", serif;
 }
 main button {
+  border: solid #687557 1px;
   padding: 20px 0;
   width: 100%;
   align-self: center;
   justify-self: center;
+  transition: background-color, color, border-color, box-shadow, transform 0.15s;
+}
+main button:hover {
+  box-shadow: 5px 5px black;
+}
+main button:active {
+  color: #FFF;
 }
 @media screen and (min-width: 959px) {
   main button {
     width: 560px;
   }
 }
-main button:hover {
-  background-color: #444237;
-  transition: 0.15s;
+
+a:hover {
+  -webkit-text-decoration: underline #687557;
+          text-decoration: underline #687557;
+  color: #687557;
+  transition: color 0.15s, -webkit-text-decoration;
+  transition: text-decoration, color 0.15s;
+  transition: text-decoration, color 0.15s, -webkit-text-decoration;
+}
+
+a:active {
+  color: #4B4B4B;
+  -webkit-text-decoration: underline #4B4B4B;
+          text-decoration: underline #4B4B4B;
 }
 
 button {
@@ -182,7 +242,7 @@ button {
   line-height: 120%;
   border-radius: 20px;
   color: #FFF;
-  background: #9EAF7C;
+  background: #687557;
   letter-spacing: -0.32px;
 }
 @media screen and (min-width: 959px) {
@@ -216,6 +276,10 @@ input {
   padding: 16px;
 }
 
+textarea {
+  resize: none;
+}
+
 .header {
   overflow-x: hidden;
   position: absolute;
@@ -229,7 +293,7 @@ input {
   }
 }
 
-.header__sub {
+.header__contacts {
   position: relative;
   margin-top: 20px;
   display: flex;
@@ -239,12 +303,12 @@ input {
   gap: 75px;
 }
 @media screen and (max-width: 958px) {
-  .header__sub {
+  .header__contacts {
     display: none;
   }
 }
 
-.header__benefits-telephone {
+.header__phone {
   border: 1px solid #FFF;
   border-radius: 20px;
   padding: 3px 8px;
@@ -265,14 +329,18 @@ input {
   }
 }
 
-.header__link {
+.header__logo {
   font-family: "Philosopher Bold", serif;
   color: #FFF;
   font-size: 3rem;
   margin-bottom: 15px;
 }
+.header__logo:hover {
+  text-decoration: none;
+  color: #F3F1EC;
+}
 @media screen and (min-width: 959px) {
-  .header__link {
+  .header__logo {
     font-size: 5.25rem;
   }
 }
@@ -291,10 +359,8 @@ input {
   }
 }
 
-.header__nav-item:hover {
-  text-decoration: underline;
-  color: #9EAF7C;
-  transition: 0.1s;
+.header__nav-link:hover {
+  color: #687557;
 }
 
 .header__social {
@@ -315,14 +381,15 @@ input {
 }
 
 .header__social-item:last-child {
-  background-color: #9EAF7C;
-  border-color: #9EAF7C;
+  background-color: #9eaf88;
+  border-color: #9eaf88;
 }
 
 .header__button {
   border-radius: 60px;
   padding: 14.5px 13px;
   margin-bottom: 15px;
+  background-color: #9eaf88;
 }
 @media screen and (min-width: 929px) {
   .header__button {
@@ -336,7 +403,7 @@ input {
   color: #FFF;
   background-color: #444237;
   padding-top: 130px;
-  background-image: url(../image/background_promo.webp);
+  background-image: url(../img/background_promo.webp);
   background-position: 57%;
   background-size: cover;
 }
@@ -392,6 +459,7 @@ input {
 .promo__button {
   margin-top: 35px;
   align-self: start;
+  background-color: #9eaf88;
 }
 
 .promo__list {
@@ -408,7 +476,7 @@ input {
   }
 }
 
-.promo__list-item {
+.promo__item {
   display: flex;
   align-items: center;
   font-size: 1.35rem;
@@ -416,20 +484,19 @@ input {
   gap: 16px;
 }
 @media screen and (min-width: 959px) {
-  .promo__list-item {
+  .promo__item {
     font-size: 2.6rem;
   }
 }
 
-.promo__list-icon {
-  background: #9EAF7C;
+.promo__icon {
+  background: #9eaf88;
   border-radius: 50%;
   width: 60px;
-  padding: 13px;
-  overflow: visible;
+  padding: 12px;
 }
 
-.promo__decor {
+.promo__decoration {
   position: relative;
   left: 50%;
   transform: translatex(-50%);
@@ -517,7 +584,7 @@ input {
 
 .about__number {
   font-family: "Philosopher Bold", serif;
-  color: #9EAF7C;
+  color: #687557;
   font-size: 5.25rem;
   line-height: 70%;
 }
@@ -550,7 +617,7 @@ input {
   }
 }
 
-.about__decor--rotate {
+.about__decor--different {
   transform: translate(-50%, -25%) rotate(8deg);
 }
 
@@ -563,27 +630,28 @@ input {
   }
 }
 
-.description {
+.product {
   overflow-x: hidden;
 }
 
-.description__wrapper {
+.product__wrapper {
   margin-inline: 45px;
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
-  .description__wrapper {
+  .product__wrapper {
     margin-inline: auto;
   }
 }
 
-.description__title {
+.product__title {
   margin: 40px 0;
 }
 
-.description__item {
+.product__item {
   display: flex;
   border: 1px solid #C3BEBE;
   border-radius: 20px;
@@ -596,92 +664,92 @@ input {
   align-self: center;
 }
 @media screen and (min-width: 1210px) {
-  .description__item {
+  .product__item {
     font-size: 1.5rem;
   }
 }
 
-.description__first-item {
+.product__first-item {
   padding-bottom: 26px;
 }
-.description__first-item .description__item-title {
+.product__first-item .product__item-title {
   margin: 8px 0 5px 0;
 }
 @media screen and (min-width: 1210px) {
-  .description__first-item .description__item-title {
+  .product__first-item .product__item-title {
     margin-top: 15px;
   }
 }
 @media screen and (min-width: 1210px) {
-  .description__first-item {
+  .product__first-item {
     align-self: start;
     z-index: 4;
   }
 }
 
-.description__second-item {
+.product__second-item {
   position: relative;
   z-index: 2;
   margin-top: -55px;
   padding-bottom: 28px;
 }
-.description__second-item .description__item-title {
+.product__second-item .product__item-title {
   margin: 20px 0 8px 0;
 }
 @media screen and (min-width: 1210px) {
-  .description__second-item {
+  .product__second-item {
     align-self: end;
     margin-top: -100px;
   }
 }
 
-.description__third-item {
+.product__third-item {
   position: relative;
   z-index: 4;
   margin-top: -120px;
   padding: 10px 14px 19px 10px;
 }
-.description__third-item .description__item-title {
+.product__third-item .product__item-title {
   margin: 10px 0 6px 0;
 }
 @media screen and (min-width: 1210px) {
-  .description__third-item .description__item-title {
+  .product__third-item .product__item-title {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1210px) {
-  .description__third-item {
+  .product__third-item {
     align-self: end;
     margin-right: 40px;
     margin-top: -138px;
   }
 }
 
-.description__icon {
-  background-color: #9EAF7C;
+.product__icon {
+  background-color: #687557;
   border-radius: 50%;
   block-size: -moz-min-content;
   block-size: min-content;
   padding: 5px;
 }
 
-.description__item-main {
+.product__item-main {
   margin-left: 24px;
 }
 
-.description__item-title {
+.product__item-title {
   font-size: 2.6rem;
 }
 
-.description__item-info {
+.product__item-info {
   font-family: "Inter", sans-serif;
 }
 
-.description__item-span {
+.product__item-span {
   font-family: "Inter Semibold", sans-serif;
 }
 
-.description__first-img {
+.product__first-img {
   position: relative;
   left: 32px;
   margin-top: -28px;
@@ -690,12 +758,12 @@ input {
   width: 430px;
 }
 @media screen and (min-width: 1210px) {
-  .description__first-img {
+  .product__first-img {
     display: none;
   }
 }
 
-.description__second-img {
+.product__second-img {
   position: relative;
   left: -366px;
   margin-top: -37px;
@@ -703,7 +771,7 @@ input {
   width: 640px;
 }
 @media screen and (min-width: 1210px) {
-  .description__second-img {
+  .product__second-img {
     margin-top: -55px;
     left: 0;
     align-self: center;
@@ -711,13 +779,13 @@ input {
   }
 }
 
-.description__button {
+.product__button {
   align-self: start;
   margin-top: -25px;
   z-index: 6;
 }
 @media screen and (max-width: 1210px) {
-  .description__button {
+  .product__button {
     display: none;
   }
 }
@@ -742,7 +810,7 @@ input {
   margin-top: 40px;
 }
 
-.catalog__big-list {
+.catalog__large-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -750,22 +818,25 @@ input {
   justify-content: center;
 }
 @media screen and (min-width: 571px) {
-  .catalog__big-list {
+  .catalog__large-list {
     display: none;
   }
 }
 
-.catalog__big-item {
+.catalog__large-item {
   display: flex;
   flex-direction: column;
 }
 
-.catalog__big-img {
+.catalog__large-img {
   border-radius: 20px;
 }
 
-.catalog__big-name {
+.catalog__large-name {
   margin-top: 11.2px;
+}
+.catalog__large-name:hover {
+  text-decoration: none;
 }
 
 .catalog__list {
@@ -816,6 +887,9 @@ input {
   margin-top: 11.2px;
   max-width: 120px;
 }
+.catalog__name:hover {
+  text-decoration: none;
+}
 @media screen and (min-width: 1159px) {
   .catalog__name {
     max-width: 200px;
@@ -831,156 +905,150 @@ input {
   margin: 45px 0;
 }
 
-.feedback {
+.help {
   overflow: hidden;
   font-family: "Inter Light", sans-serif;
   color: #FFF;
   background-color: #444237;
-  background-image: url(../image/background_form.webp);
+  background-image: url(../img/background_form.webp);
   background-position: 70%;
   background-size: cover;
 }
 
-.feedback__wrapper {
+.help__wrapper {
   margin-inline: 45px;
   max-width: 1160px;
   padding: 50px 0 63px 0;
 }
 @media screen and (min-width: 1159px) {
-  .feedback__wrapper {
+  .help__wrapper {
     margin-inline: auto;
   }
 }
 
-.feedback__form {
-  display: flex;
-  flex-direction: column;
-  max-width: 465px;
-}
-
-.feedback__name-title {
+.help__name-title {
   font-size: 3rem;
   font-family: "Inter Light", sans-serif;
   letter-spacing: -1.92px;
 }
 @media screen and (min-width: 900px) {
-  .feedback__name-title {
+  .help__name-title {
     font-size: 3.75rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .feedback__svg {
+  .help__svg {
     width: 340px;
   }
 }
-.feedback__title-about {
+.help__title-about {
   font-size: 2.4rem;
   letter-spacing: -1.44px;
 }
 @media screen and (min-width: 900px) {
-  .feedback__title-about {
+  .help__title-about {
     font-size: 3.15rem;
     margin-top: 10px;
   }
 }
 
-.feedback__title-answer {
+.help__title-answer {
   font-family: "Philosopher Italic", serif;
   font-size: 3.2rem;
   text-align: end;
 }
 @media screen and (min-width: 900px) {
-  .feedback__title-answer {
+  .help__title-answer {
     font-size: 6rem;
   }
 }
 
-.feedback__input-name {
+.help__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 465px;
   margin-top: 50px;
+  gap: 20px;
 }
 
-.feedback__input-telephone {
-  margin-top: 20px;
-}
-
-.feedback__input-comment {
-  margin-top: 20px;
+.help__input-comment {
   border-radius: 20px;
   padding: 16px;
 }
 
-.feedback__condition {
+.help__condition {
   line-height: 120%;
   font-size: 1rem;
-  margin-top: 15px;
-}
-
-.feedback__link {
-  color: #9EAF7C;
 }
 @media screen and (min-width: 1159px) {
-  .feedback__link {
+  .help__condition {
     font-size: 1.2rem;
   }
 }
 
-.feedback__link:hover {
-  text-decoration: underline;
+.help__link {
+  color: #687557;
 }
 
-.feedback__button {
-  margin-top: 23px;
+.help__button {
   max-width: 465px;
+  border-radius: 20px;
+  background-color: #9eaf88;
+}
+.help__button:hover {
+  background-color: #444237;
+  transition: 0.15s;
 }
 
-.feedback__first-decor {
+.help__decor-1 {
   position: relative;
   left: 50%;
   margin-top: -20px;
   transform: rotate(180deg) translatex(50%);
 }
 @media screen and (min-width: 1365px) {
-  .feedback__first-decor {
+  .help__decor-1 {
     width: 110%;
     margin-top: -40px;
   }
 }
 
-.feedback__second-decor {
+.help__decor-2 {
   position: relative;
   left: 50%;
   transform: translatex(-50%);
   margin-bottom: -20px;
 }
 @media screen and (min-width: 1365px) {
-  .feedback__second-decor {
+  .help__decor-2 {
     width: 110%;
     margin-bottom: -40px;
   }
 }
 
-.order {
+.instruction {
   overflow-x: hidden;
 }
 
-.order__wrapper {
+.instruction__wrapper {
   margin-inline: 45px;
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
-  .order__wrapper {
+  .instruction__wrapper {
     margin-inline: auto;
   }
 }
 
-.order__title {
+.instruction__title {
   margin-top: 35px;
 }
 
-.order__list {
+.instruction__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -988,13 +1056,13 @@ input {
   gap: 30px;
 }
 @media screen and (min-width: 1020px) {
-  .order__list {
+  .instruction__list {
     flex-direction: row;
     justify-content: space-around;
   }
 }
 
-.order__item {
+.instruction__item {
   background: #FFF;
   border-radius: 20px;
   height: 400px;
@@ -1002,47 +1070,47 @@ input {
   max-width: 300px;
 }
 @media screen and (min-width: 1159px) {
-  .order__item {
+  .instruction__item {
     max-width: 330px;
   }
 }
 
-.order__about {
+.instruction__about {
   padding-left: 12px;
 }
 
-.order__info {
+.instruction__info {
   font-family: "Inter", sans-serif;
 }
 @media screen and (min-width: 1159px) {
-  .order__info {
+  .instruction__info {
     font-size: 1.75rem;
   }
 }
 
-.order__list-title {
+.instruction__list-title {
   font-size: 2.1rem;
 }
 @media screen and (min-width: 1159px) {
-  .order__list-title {
+  .instruction__list-title {
     font-size: 2.55rem;
   }
 }
 
-.order__img {
+.instruction__img {
   display: block;
   margin: 0 auto 35px auto;
 }
 
-.order__svg {
+.instruction__svg {
   width: 100%;
 }
 
-.order__list-title {
+.instruction__list-title {
   margin: 15px 0;
 }
 
-.order__button {
+.instruction__button {
   margin-top: 35px;
 }
 
@@ -1139,6 +1207,7 @@ input {
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
   .clients__wrapper {
@@ -1219,16 +1288,6 @@ input {
   }
 }
 
-.clients__slide {
-  align-self: center;
-  margin-top: 42px;
-}
-@media screen and (max-width: 680px) {
-  .clients__slide {
-    display: none;
-  }
-}
-
 .clients__button {
   margin-top: 60px;
 }
@@ -1240,6 +1299,8 @@ input {
 
 .footer {
   overflow-x: hidden;
+  position: sticky;
+  top: 100vh;
 }
 
 .footer__title {
@@ -1263,7 +1324,7 @@ input {
 }
 
 .footer__background {
-  background: #9EAF7C;
+  background: #687557;
   padding: 34px 0 73px 0;
 }
 @media screen and (min-width: 1159px) {
@@ -1307,7 +1368,9 @@ input {
 .footer__item {
   line-height: 180%;
 }
-
+.footer__item > a:hover {
+  color: #4B4B4B;
+}
 .footer__item--last {
   margin-top: 16px;
-}/*# sourceMappingURL=style.css.map */
+}

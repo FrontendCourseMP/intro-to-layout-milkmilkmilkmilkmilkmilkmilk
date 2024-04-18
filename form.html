@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/form.css">
+    <title>чт.... форма</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__link">Logo</a>
+            <button class="header__btn">
+                <img src="img/burger.svg" alt="Навигация" class="header__burger">
+            </button>
+        </div>
+    </header>
+
+    <section class="registration">
+        <h1 class="registration__title">Регистрация</h1>
+        <form class="registration__form">
+          <div class="registration__wrapper">
+            <label class="registration__label">
+              ИМЯ* 
+              <input
+                required="true"
+                type="text"
+                placeholder="Введите ваше имя"
+                class="registration__input"
+              />
+            </label>
+            <label class="registration__label registration__label-current">
+              ДАТА РОЖДЕНИЯ*
+              <input
+                required="true"
+                type="date"
+                placeholder="Введите ваше имя"
+                class="registration__input"
+              />
+            </label>
+            <label class="registration__label">
+              ПОЛ*
+              <select name="" id="" class="registration__select">
+                <option class="registration__option">муж.</option>
+                <option class="registration__option">жен.</option>
+              </select>
+            </label>
+            <label class="registration__label registration__label-current">
+              ПАРОЛЬ*
+              <input
+                required="true"
+                type="password"
+                placeholder="Введите ваш пароль"
+                class="registration__input"
+              />
+            </label>
+
+            <label class="registration__label registration__label-current">
+              ТЕЛЕФОН*
+              <input
+                required="true"
+                type="tel"
+                placeholder="+7 (900) 123-45-67"
+                class="registration__input"
+              />
+            </label>
+            <ul class="registration__list">
+              <p class="registration__text">Удобное время связи</p>
+              <li class="registration__item">
+                <input
+                  required="true"
+                  type="checkbox"
+                  name="daytime"
+                  id=""
+                  class="registration__checkbox"
+                />
+                <span class="registration__span">Утро</span>
+              </li>
+              <li class="registration__item">
+                <input
+                  required="true"
+                  type="checkbox"
+                  name="daytime"
+                  id=""
+                  class="registration__checkbox"
+                />
+                <span class="registration__span">День</span>
+              </li>
+              <li class="registration__item">
+                <input
+                  required="true"
+                  type="checkbox"
+                  name="daytime"
+                  id=""
+                  class="registration__checkbox"
+                />
+                <span class="registration__span">Вечер</span>
+              </li>
+              <li class="registration__item">
+                <input
+                  required="true"
+                  type="checkbox"
+                  name="daytime"
+                  id=""
+                  class="registration__checkbox"
+                />
+                <span class="registration__span">Ночь</span>
+              </li>
+            </ul>
+
+            <label class="registration__label registration__label-current">
+              ПОЧТА*
+              <input
+                required="true"
+                type="email"
+                placeholder="ur_email@gmail.com"
+                class="registration__input"
+              />
+            </label>
+            <div class="button__wrapper">
+              <button type="submit" class="registration__button">Отправить</button>
+              <button type="reset" class="registration__button registration__button-current" disabled>
+                Сбросить
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__background">
+            <ul class="footer__list">
+                <li class="footer__item footer__item--logo">Logo</li>
+                <li class="footer__item">Адрес - Москва, Степана Разина 119</li>
+                <li class="footer__item">Телефон - <a href="tel:8(982)658-25-85"> 8 982 658 25 85</a></li>
+                <li class="footer__item">ТОО «Консалтинговая Компания Financial-Tax Analytics»</li>
+                <li class="footer__item">БИН 181 040 010 133</li>
+                <li class="footer__item">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</li>
+                <li class="footer__item">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</li>
+                <li class="footer__item">ИИК KZ76 9650 3F00 0817 5335</li>
+                <li class="footer__item">БИК IRTYKZKA в АО "ForteBank"</li>
+                <li class="footer__item footer__item--last">мобильный/ватсап 
+                    <a href="tel:+7(778)-775-77-68">+ 7 778 775 77 68</a>,
+                    <a href="mailto:info@fintax.kz">info@fintax.kz</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
